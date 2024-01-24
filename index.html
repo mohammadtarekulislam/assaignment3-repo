@@ -1,11 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoky site</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoky site</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!--  manrope google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- tailwind customize color -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <!-- font class -->
+  <style>
+    .font-manrope {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
 </head>
-<body>
+
+<body class="font-manrope">
+  <header>
+    <!-- slider -->
+    <div class="carousel w-full">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img src="Images/1.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide2" class="carousel-item relative w-full">
+        <img src="Images/2.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide3" class="carousel-item relative w-full">
+        <img src="Images/3.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide4" class="carousel-item relative w-full">
+        <img src="Images/4.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+  <main>
+    <!-- progress section -->
+    <section class="bg-[#FFF] mt-8">
+      <div>
+        <p class="font-extrabold text-3xl text-center decoration-[#131318]">Professional Hockeys Club</p>
+        <p class="font-medium text-xs text-center decoration-black">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
+      </div>
+
+      <div class="flex justify-around sm:flex
+      sm:flex-col lg:flex lg:flex-row lg:gap-1 lg:mt-10">
+        <!-- first -->
+        <div class="sm:mt-5 mb-5 ">
+          <div class="radial-progress text-red-400 sm:ml-72 
+           lg:ml-20" style="--value:87;" role="progressbar"><span class="text-black">87%</span></div>
+          <p class="font-semibold text-xs sm:text-center">Prayer Facility</p>
+          <p class="font-normal	text-xs	sm:text-center lg:text-center sm:pl-1">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+        </div>
+        <!-- second -->
+        <div class="sm:mt-5 mb-5 ">
+          <div class="radial-progress text-green-600 sm:ml-72 lg:ml-20" style="--value:95;" role="progressbar"><span class="text-black">95%</span></div>
+          <p class="font-semibold text-xs sm:text-center">Experienced Coach.</p>
+          <p class="font-normal	text-xs	sm:text-center lg:text-center sm:pl-1">Amet consectetur. Condimentum <br> dignissim adipiscing .</p> 
+        </div>  
+        <!-- third -->
+        <div class="sm:mt-5 mb-5 ">
+          <div class="radial-progress text-amber-400 sm:ml-72 lg:ml-20" style="--value:90;" role="progressbar"><span class="text-black">90%</span></div>
+          <p class="font-semibold text-xs sm:text-center">Senior Player</p>
+          <p class="font-normal	text-xs	sm:text-center lg:text-center sm:pl-1">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+        </div>
+        <!-- fourth -->
+        <div class="sm:mt-5 mb-5 ">
+          <div class="radial-progress text-blue-400 sm:ml-72 lg:ml-20" style="--value:80;" role="progressbar"><span class="text-black">80%</span></div>
+          <p class="font-semibold text-xs sm:text-center">Training Ground</p>
+          <p class="font-normal	text-xs	sm:text-center lg:text-center sm:pl-1">Amet consectetur. Condimentum <br> dignissim adipiscing ..</p>
+        </div>
+       
+      </div>
     
+    </section>
+
+  </main>
 </body>
+
 </html>
